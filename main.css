@@ -1,0 +1,61 @@
+/*==============================
+GENERAL SETUP
+==============================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/*==============================
+LAYOUT
+==============================*/
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+
+}
+
+/* move vid from top left corner to div center, then
+ push vid up/left 50% (to realize true vid center vid)  */
+.video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.intro {
+    padding: 50px 150px;
+    line-height: 1.5;
+}
+
+.intro p {
+
+}
+
